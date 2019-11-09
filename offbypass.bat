@@ -1,5 +1,6 @@
 @echo off
 taskkill /t /f /im Temp.exe
+taskkill /t /f /im adb.exe
 RD /S /Q "%temp%"
 DEL /f Temp.exe
 adb kill-server
